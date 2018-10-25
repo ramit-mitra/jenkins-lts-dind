@@ -1,6 +1,9 @@
 # make use of vm's 
 sudo: 'required'
 
+ignore:
+  - *.md
+
 # building only for these branches
 branches:
   only:

@@ -1,5 +1,7 @@
 # jenkins-lts-dind
 
+
+[![Build Status](https://travis-ci.org/ramit-mitra/jenkins-lts-dind.svg?branch=master)](https://travis-ci.org/ramit-mitra/jenkins-lts-dind)   
 Jenkins LTS with Docker CE 18 preinstalled as a single DinD container
 
 ## Purpose
@@ -35,7 +37,7 @@ jenkins:
 
 ## Availability
 
-This image is available at docker hub at : [Ramit Mitra](https://github.com/ramit-mitra)
+This image is available at docker hub at : [https://hub.docker.com/r/ramitmitra/jenkins-lts-dind/](https://hub.docker.com/r/ramitmitra/jenkins-lts-dind/)
 
 ## Built With
 
