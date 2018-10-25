@@ -1,18 +1,13 @@
 # make use of vm's 
 sudo: 'required'
 language: ruby
-# ignore:
-#   - *.md
-
 # building only for these branches
 branches:
   only:
   - master
-
 # have the docker service set up
 services:
   - 'docker'
-
 # build and push the docker image for jenkins-lts-dind to docker hub
 before_install:
   - docker build -t ramitmitra/jenkins-lts-dind .
