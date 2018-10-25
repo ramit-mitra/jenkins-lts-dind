@@ -21,6 +21,9 @@ sudo: 'required'
 # update it later)
 services:
   - 'docker'
+language: node_js
+node_js:
+  - "8"
 
 # prepare the machine before any code
 # installation scripts
@@ -51,6 +54,6 @@ after_success:
       make push-image ;
     fi
 
-# don't notify me when things fail
+# do notify me when things fail
 notifications:
   email: false
