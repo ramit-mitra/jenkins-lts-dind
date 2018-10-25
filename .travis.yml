@@ -1,0 +1,17 @@
+# make use of vm's 
+sudo: 'required'
+
+# building only for these branches
+branches:
+  only:
+  - master
+
+# have the docker service set up
+services:
+  - 'docker'
+
+# build and push the docker image for jenkins-lts-dind to docker hub
+before_install:
+  - docker build -t ramitmitra/jenkins-lts-dind .
+  - echo "$DOCKERPASSWORD" | docker login -u "$DOCKERUSERNAME" --password-stdin
+  - docker push ramitmitra/jenkins-lts-dind
